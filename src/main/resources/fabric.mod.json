@@ -8,8 +8,8 @@
 		"amvern"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/amvern/plainchat",
+		"sources": "https://github.com/amvern/plainchat"
 	},
 	"license": "MIT",
 	"icon": "assets/plainchat/icon.png",
