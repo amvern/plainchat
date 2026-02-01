@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "plainchat",
+	"version": "${version}",
+	"name": "Plain Chat",
+	"description": "Strips Chat Formatting",
+	"authors": [
+		"amvern"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/plainchat/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"github.amvern.plainchat.PlainChat"
+		],
+		"client": [
+			"github.amvern.plainchat.PlainChatClient"
+		]
+	},
+	"mixins": [
+		"plainchat.mixins.json",
+		{
+			"config": "plainchat.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
